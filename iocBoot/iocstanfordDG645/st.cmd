@@ -24,7 +24,7 @@ drvAsynIPPortConfigure("IP2", "10.23.3.13:5025")
 cd("$(TOP)")
 
 ## Load record instances
-dbLoadTemplate("db/dg645_delay.substitutions")
+dbLoadTemplate("db/dg645.substitutions")
 
 asSetFilename("/epics/xf/23id/xf23id.acf")
 

@@ -1,0 +1,4 @@
+NAME=es-dg645
+USER=softioc
+PORT=5013
+HOST=xf23id1-ioc2
