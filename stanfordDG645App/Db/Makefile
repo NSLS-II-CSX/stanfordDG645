@@ -10,7 +10,10 @@ include $(TOP)/configure/CONFIG
 #----------------------------------------------------
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
-#DB += xxx.db
+DB += dg645_delay.template
+DB += dg645_outputs.template
+DB += dg645_trigger.template
+DB += dg645.substitutions
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
