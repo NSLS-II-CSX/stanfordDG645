@@ -41,14 +41,14 @@ record(ao, "$(Sys)$(Dev)Val:Rate-SP"){
 	field(DTYP, "stream")
 	field(OUT, "@dg645.proto writeTriggerRate $(PORT)")
 	field(EGU, "Hz")
-	field(PREC, "6")
+	field(PREC, "9")
 }
 
 record(ai, "$(Sys)$(Dev)Val:Rate-RB"){
 	field(DTYP, "stream")
 	field(INP, "@dg645.proto readTriggerRate $(PORT)")
 	field(EGU, "Hz")
-	field(PREC, "6")
+	field(PREC, "9")
 	field(SCAN, "$(SCAN)")
 }
 

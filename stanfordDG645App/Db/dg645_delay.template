@@ -25,7 +25,7 @@ record(mbbo, "$(Sys)$(Dev)DO:Rel-Sel"){
 
 record(ao, "$(Sys)$(Dev)DO:Dly-SP"){
 	field(FLNK, "$(Sys)$(Dev)Calc1_")
-	field(PREC, "6")
+	field(PREC, "9")
 	field(EGU, "S")
 	info(autosaveFields, "VAL")
 }
@@ -44,7 +44,7 @@ record(ai, "$(Sys)$(Dev)DO:Dly-RB"){
 	field(INP, "@dg645.proto readDelayVal($(CHAN)) $(PORT)")
 	field(SCAN, "$(SCAN)")
 	field(EGU, "S")
-	field(PREC, "6")
+	field(PREC, "9")
 }
 
 record(mbbi, "$(Sys)$(Dev)DO:Rel-Sts"){
