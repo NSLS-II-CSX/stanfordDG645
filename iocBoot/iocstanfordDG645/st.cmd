@@ -46,6 +46,6 @@ create_monitor_set("info_positions.req", 5 , "")
 create_monitor_set("info_settings.req", 15 , "")
 
 dbl > ${TOP}/records.dbl
-system("cp ${TOP}/records.dbl /cf-update/xf23id1-ioc2.es-dg645.dbl")
+system("cp ${TOP}/records.dbl /cf-update/xf23id1-ioc3.es-dg645.dbl")
 
 
