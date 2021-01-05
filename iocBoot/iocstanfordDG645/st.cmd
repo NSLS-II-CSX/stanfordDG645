@@ -4,19 +4,18 @@
 ## everywhere it appears in this file
 
 < envPaths
+< /epics/common/xf23id1-ioc3-netsetup.cmd
 
-epicsEnvSet("EPICS_CA_AUTO_ADDR_LIST" , "NO")
-epicsEnvSet("EPICS_CA_ADDR_LIST"      , "10.23.0.255")
 
 ## Register all support components
 dbLoadDatabase("../../dbd/stanfordDG645.dbd",0,0)
 stanfordDG645_registerRecordDeviceDriver(pdbbase) 
 
 epicsEnvSet("STREAM_PROTOCOL_PATH", "$(TOP)/proto")
-drvAsynIPPortConfigure("IP1", "10.23.3.12:5025")
+drvAsynIPPortConfigure("IP1", "xf23id1-dlgn1.nsls2.bnl.local:5025")
 #asynSetTraceMask("IP1", 0, 0x9)
 #asynSetTraceIOMask("IP1", 0, 0x2)
-drvAsynIPPortConfigure("IP2", "10.23.3.13:5025")
+drvAsynIPPortConfigure("IP2", "xf23id1-dlgn2.nsls2.bnl.local:5025")
 #asynSetTraceMask("IP2", 0, 0x9)
 #asynSetTraceIOMask("IP2", 0, 0x2)
 
@@ -26,7 +25,7 @@ cd("$(TOP)")
 ## Load record instances
 dbLoadTemplate("db/dg645.substitutions")
 
-asSetFilename("/epics/xf/23id/xf23id.acf")
+asSetFilename("/epics/common/xf23id.acf")
 
 system("install -m 777 -d $(TOP)/as/save") 
 system("install -m 777 -d $(TOP)/as/req")
